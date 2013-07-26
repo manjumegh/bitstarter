@@ -330,11 +330,63 @@
               <h1>Charity-Box</h1>
               <h4><i><em>"Friend in a Need is Friend Indeed!!"</i></em></h4>
               <h4><i><em>"Piggybank of Blessings!!"</i></em></h4>
-              <p class="lead"></p>
-              <a class="btn btn-large" href="#signup">Sign up now</a>
+    <!-- accordion
+    ================================================== -->
+               <div class="accordion" id="accordion3">
+                  <div class="accordion">
+                  <p class="lead"></p>
+                  <a class="btn accordion-toggle " data-toggle="collapse"
+                     data-parent="#accordion3" href="#collapsesignin">Sign in</a>
+                  <a class="btn accordion-toggle " data-toggle="collapse"
+                     data-parent="#accordion3" href="#collapsesignup">Sign up</a>
+                  </div>
+                <div id="collapsesignin" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    <div class="auth-form" id="login">
+                        <form accept-charset="UTF-8" action="/session" method="post">
+                            <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="Tj+vxEmym03ZSYrDVr0yy5X3x6GVBt/3EiljdJpc/A8=" />
+                            </div>
+                            <div class="auth-form-header"></div>
+                            <div class="auth-form-body">
+                                <label for="login_field">
+                                  Username or Email
+                                </label>
+                                <input autocapitalize="off" autofocus="autofocus" class="input-block" id="login_field" name="login" tabindex="1" type="text" />
+
+                                <label for="password">
+                                 Password <a href="/sessions/forgot_password">(forgot password)</a>
+                                </label>
+                                <input class="input-block" id="password" name="password" tabindex="2" type="password" />
+                                <input class="button" name="commit" tabindex="3" type="submit" value="Sign in" />
+                            </div>
+                        </form>
+                     </div>
+                 </div>
+              </div>
+              <div id="collapsesignup" class="accordion-body collapse">
+                  <div class="accordion-inner">
+
+                      <div class="auth-form-body">
+                        <label for="login_field">
+                          Username or Email
+                        </label>
+                        <input autocapitalize="off" autofocus="autofocus" class="input-block" id="login_field" name="login" tabindex="1" type="text" />
+
+                        <label for="password">
+                         Create Password <a href="/sessions/forgot_password"></a>
+                        </label>
+                        <input class="input-block" id="password" name="password" tabindex="2" type="password" />
+
+                        <input class="button" name="commit" tabindex="3" type="submit" value="Sign up" />
+                     </div>
+                </div>
             </div>
-          </div>
         </div>
+    <!-- accordion end
+    ================================================== -->
+        </div>
+     </div>
+  </div>
         <div class="item">
           <img src="http://damp-mesa-6007.herokuapp.com/assets/img/helping_hand11.jpg" alt="">
           <div class="container">
@@ -538,40 +590,7 @@ An individual's friend needs $10,000 for his father's knee surgery(met with an a
           </div>
 
       </div>
-<div id="signup" class="hide-from-preloader">
-	<div class="form-wrapper">
-		<div class="wrapper form-close-wrapper">
-			<a href="#" class="toggle-contact"></a>
-		</div>
-	</div>
-	<div class="wpcf7" id="wpcf7-f248-t1-o1"><form action="/#wpcf7-f248-t1-o1" method="post" class="wpcf7-form">
-        <div style="display: none;">
-        <input type="hidden" name="_wpcf7" value="248" />
-        <input type="hidden" name="_wpcf7_version" value="3.2.1" />
-        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f248-t1-o1" />
-        <input type="hidden" name="_wpnonce" value="f2079c86a0" />
-    </div>
-    <div class="form-wrapper">
-    <div class="wrapper">
-    <fieldset class="left">
-    <p><strong>Sign-Up for Charity-Box</strong></p>
-    <ul>
-        <li>
-	<label for="contact-name">Your Name</label><span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" id="contact-name" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required input" size="40" tabindex="1" /></span>
-	</li>
-        <li>
-	<label for="contact-email">Your Email</label><span class="wpcf7-form-control-wrap email"><input type="text" name="email" value="" id="contact-email" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email input" size="40" tabindex="2" /></span>
-	</li>
-    </ul></fieldset>
-    </p></div>
-    </p></div>
-    <div class="wrapper form-action-wrapper">
-    <input type="submit" value="Submit" class="wpcf7-form-control  wpcf7-submit btn" />
-	</div>
-    <div class="wpcf7-response-output wpcf7-display-none"></div></form></div>	<div class="form-thankyou">
-		<p>Thank you. <strong>We'll contact you shortly.</strong></p>
-	</div>
-</div><br>
+
 <div id="learnmore" class="hide-from-preloader">
           <p><strong>Click on below link to learn more about Charity-Box</strong></p>
           <a href="/assets/img/profile1.pdf" alt="">Click here </a>
