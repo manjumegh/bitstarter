@@ -131,6 +131,17 @@
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
       margin-left: 100px;
     }
+    .carousel-caption .sample {
+      margin: 0;
+      line-height: 0;
+/*      color: #fff;*/
+      color: #000;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      margin-left: 0px;
+      margin-top: 0px;
+      height: 500px;
+      width: 500px;
+    }
     .carousel-caption .btn {
       margin-top: 10px;
       margin-left: 100px;
@@ -346,64 +357,11 @@
               <h1>Charity-Box</h1>
               <h4><i><em>"Friend in a Need is Friend Indeed!!"</i></em></h4>
               <h4><i><em>"Piggybank of Blessings!!"</i></em></h4>
-    <!-- accordion
-    ================================================== -->
-               <div class="accordion" id="accordion3">
-                  <div class="accordion">
-                  <p class="lead"></p>
-                  <a class="btn accordion-toggle " data-toggle="collapse"
-                     data-parent="#accordion3" href="#collapsesignin">Sign in</a>
-                  <a class="btn accordion-toggle " data-toggle="collapse"
-                     data-parent="#accordion3" href="#collapsesignup">Sign up</a>
-                  </div>
-                <div id="collapsesignin" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                    <div class="auth-form" id="login">
-                        <form accept-charset="UTF-8" action="/session" method="post">
-                            <div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="Tj+vxEmym03ZSYrDVr0yy5X3x6GVBt/3EiljdJpc/A8=" />
-                            </div>
-                            <div class="auth-form-header"></div>
-                            <div class="auth-form-body">
-                                <label for="login_field">
-                                  Username or Email
-                                </label>
-                                <input autocapitalize="off" autofocus="autofocus" class="input-block" id="login_field" name="login" tabindex="1" type="text" />
-
-                                <label for="password">
-                                 Password <a href="/sessions/forgot_password">(forgot password)</a>
-                                </label>
-                                <input class="input-block" id="password" name="password" tabindex="2" type="password" />
-                                <input class="button" name="commit" tabindex="3" type="submit" value="Sign in" />
-                            </div>
-                        </form>
-                     </div>
-                 </div>
-              </div>
-              <div id="collapsesignup" class="accordion-body collapse">
-                  <div class="accordion-inner">
-
-                      <div class="auth-form-body">
-                        <label for="login_field">
-                          Username or Email
-                        </label>
-                        <input autocapitalize="off" autofocus="autofocus" class="input-block" id="login_field" name="login" tabindex="1" type="text" />
-
-                        <label for="password">
-                         Create Password <a href="/sessions/create_password"></a>
-                        </label>
-                        <input class="input-block" id="password" name="password" tabindex="2" type="password" />
-
-                        <input class="button" name="commit" tabindex="3" type="submit" value="Sign up" />
-                     </div>
-                </div>
+              <a class="btn btn-large" href="#learnmore">Learn more</a>
             </div>
-        </div>
-    <!-- accordion end
-    ================================================== -->
-        </div>
-     </div>
-  </div>
-  </div>
+         </div>
+      </div>
+      </div>
         <div class="item">
         <div class="item-sample">
           <img src="/assets/img/test1.jpg" alt="">
@@ -467,7 +425,6 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
     <p>Every individual is a user of <b>Charity-Box</b>, starting from kids to elderly people</p>
       <div class="row">
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
           <pre><h4>Users below age of 15years</h4></pre>
           <p>They gain the Charity-Points in following ways:
           <ul>
@@ -478,7 +435,6 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
           <pre><h4>Users below age of 60years</h4></pre>
           <p>They gain the Charity-Points in following ways:
           <ul>
@@ -489,7 +445,6 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div><!-- /.span4 -->
         <div class="span4">
-          <img class="img-circle" data-src="holder.js/140x140">
           <pre><h4>Users above age of 60years</h4></pre>
           <p>They gain the Charity-Points in following ways:
           <ul>
@@ -502,15 +457,27 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
       </div><!-- /.row -->
       <div class="row">
         <div class="span12">
+            <div class="accordion" id="learnmore">
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseexample">
+                     <h4>User's Profile Examples<h4>
+                  </a>
+                </div>
+                <div id="collapseexample" class="accordion-body collapse">
+                  <div class="accordion-inner">
         <!-- Carousel
     ================================================== -->
     <div id="secondCarousel" class="carousel slide">
       <div class="carousel-inner">
+          <h4>Please click on Next/Previous button for Day-1, Day-2, and Day-3, User's Profile Examples</h4>
         <div class="item active">
         <div class="item-example">
           <img class= "sampleimg" src="/assets/img/sample1.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
+              <p class="sample"><h1> Day-1</h1> </p>
            </div>
          </div>
         </div>
@@ -520,6 +487,7 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
           <img class= "sampleimg" src="/assets/img/sample2.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
+              <p class="sample"><h1> Day-2</h1> </p>
             </div>
           </div>
         </div>
@@ -530,6 +498,7 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
           <img class="sampleimg" src="/assets/img/sample3.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
+              <p class="sample"><h1> Day-3</h1> </p>
             </div>
           </div>
         </div>
@@ -538,6 +507,13 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
       <a class="left carousel-control" href="#secondCarousel" data-slide="prev">&lsaquo;</a>
       <a class="right carousel-control" href="#secondCarousel" data-slide="next">&rsaquo;</a>
     </div><!-- /.carousel -->
+
+
+    </div><!-- /accordion-inner -->
+  </div><!-- /accordion2-example -->
+</div><!-- /accordion-group -->
+</div><!-- /accordion -->
+
   </div><!-- /.span4 -->
 </div><!-- /.row -->
 
@@ -552,7 +528,6 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-          <h2>Your Charity-Box</h2>
         </div>
       </div>
       <div class="row-fluid subheading">
@@ -561,7 +536,8 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-          <img class="img-polaroid" src="/assets/img/stars.gif">
+          <h4>Transaction Flow</h4>
+          <a href="assets/img/flow.jpg" target="_blank"><img class="img-polaroid" src="/assets/img/flow.jpg">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
@@ -573,12 +549,12 @@ This can be considered as bridge to decrease the gap of poor (demand) and rich (
                 different in horizontal and vertical layouts, illustrating
                 media queries. -->
                 <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+                <h3>2</h3> <p>backers</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6000</h3> <p>of $10,000</p>
+                  <h3>$0</h3> <p>of $50,000</p>
                 </div>
               </div>
               <div class="span4">
@@ -711,10 +687,6 @@ The complete flow is shown as attachment:
 
       </div>
 
-<div id="learnmore" class="hide-from-preloader">
-          <p><strong>Click on below link to learn more about Charity-Box</strong></p>
-          <a href="/assets/img/profile1.pdf" alt="">Click here </a>
-</div></br>
 <div id="contact" class="work-item-wrapper">
     <p><strong>Contact</strong></p>
     <a href="#" class="state active-state"><em>Email us at:</em><strong>contact@gmail.com</strong></a>
