@@ -13,7 +13,20 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <style>
-
+    #scroll{
+         position : absolute;
+      white-space : nowrap;
+              top : 0px;
+             left : 200px;
+       }
+    #oScroll{
+	   margin : 100px;
+	  padding : 0px;
+         position : relative;
+            width : 1000px;
+           height : 20px;
+         overflow : hidden;
+        }
     /* GLOBAL STYLES
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
@@ -344,7 +357,7 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>TechZone-77E</h1>
-              <h4><i><em>"Where Ideas Takes Wing!!!"</em></i></h4>
+              <h4><i><em>"Where Knowledge and Idea Take Wings!!!"</em></i></h4>
     <!-- accordion
     ================================================== -->
                <div class="accordion" id="accordion3">
@@ -432,7 +445,7 @@
 
         <div class="item">
         <div class="item-sample">
-          <img src="/assets/img/helping_hand_green.jpg" alt="">
+          <img src="/assets/img/fun.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Demos & Fun</h1>
@@ -452,7 +465,9 @@
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
+    <div id="oScroll">
+        <div id="scroll"><b>Last Date: 11th Oct 2013, for naming competetion "So You Think You Can Invent" competition which will be a very short presentation of a technical idea, need not be a complete implementation.</b></div>
+    </div>
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
@@ -467,11 +482,11 @@
 
 <div id="learnmore" class="hide-from-preloader">
           <p><strong>Click on below link to learn more about TechZone-77E</strong></p>
-          <a href="/assets/img/profile1.pdf" alt="">Click here </a>
+          <a href="/assets/img/techzone.pdf" alt="">Click here </a>
 </div></br>
 <div id="contact" class="work-item-wrapper">
     <p><strong>Contact</strong></p>
-    <a href="#" class="state active-state"><em>Email us at:</em><strong>contact@gmail.com</strong></a>
+    <a href="#" class="state active-state"><em>Email us at:</em><strong>apalasse@cisco.com, rubjacob@cisco.com, ramakrmu@cisco.com</strong></a>
 </div>
       <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
       <!-- http://creativecommons.org/licenses/ -->
@@ -514,8 +529,8 @@
       !function ($) {
         $(function(){
           // carousel demo
-          $('#myCarousel').carousel()
-        })
+          $('#myCarousel').carousel({interval: 10000});
+        });
       }(window.jQuery)
     </script>
     <script>
@@ -536,6 +551,25 @@
 
         ga('create', 'UA-42985638-1', 'herokuapp.com');
         ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+     function scroll(oid,iid){
+          this.oCont=document.getElementById(oid)
+          this.ele=document.getElementById(iid)
+          this.width=this.ele.clientWidth;
+          this.n=this.oCont.clientWidth;
+          this.move=function(){
+             this.ele.style.left=this.n+"px"
+             this.n--
+             if(this.n<(-this.width)){this.n=this.oCont.clientWidth}
+                              }
+                             }
+     var vScroll
+     function setup(){
+         vScroll=new scroll("oScroll","scroll");
+         setInterval("vScroll.move()",20)
+                     }
+  onload=function(){setup()}
     </script>
     <!-- End Google Analytics -->
   </body>
